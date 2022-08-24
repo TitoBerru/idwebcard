@@ -1,0 +1,120 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+.main{
+    width: 65vw;
+    height: 60vh;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color:aliceblue
+}
+.banner{
+    background-color: black;
+    width: 30vw;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    animation: imgPersonal 3s;
+}
+@keyframes imgPersonal{
+    0%{
+        transform: translateX(-100%);
+    } 
+} 
+.content{
+    width: 100%;
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size:xx-large;
+    /* font-family:gliker; */
+    margin: 2rem;
+    font-weight: bold;
+}
+.normal{
+    font-size:larger;
+    margin: 2rem;
+
+}
+.moreInfo{
+    margin: 2rem;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.socialMedia {
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.socialMediaIcons{
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.socialMediaIcons img{
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+@media (max-width: 750px) {
+    
+    .banner{
+        width: 50vw;
+        height: 100%;
+    }
+    .content{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        font-size:large;
+        margin: 1rem;
+
+    }
+    .normal{
+        font-size:medium;
+        margin: 0.5rem;
+    }
+    .moreInfo{
+        margin: 1rem;
+        color:#7F6647;
+    }
+
+    .socialMediaIcons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+        height: 100%;
+    }
+    .socialMediaIcons img{
+        
+        display: flex;
+        flex-direction: row;
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 1rem;
+        padding: 1em;
+    }
+    
+
+}
