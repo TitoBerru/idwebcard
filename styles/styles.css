@@ -42,6 +42,7 @@
     font-weight: bold;
 }
 .normal{
+    font-family: 'VT323', monospace;
     font-size:larger;
     margin: 2rem;
 
